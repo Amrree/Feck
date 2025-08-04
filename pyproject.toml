@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thefeck"
+version = "3.32"
+authors = [
+  { name="Annmarie", email="amrree@gmail.com" },
+]
+description = "A magnificent app which corrects your previous console command, with a bit of craic!"
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["feck", "thefuck", "cli", "command-line", "correction", "typo", "irish", "humor"]
+
+[project.urls]
+"Homepage" = "https://github.com/Amrree/Feck"
+"Bug Tracker" = "https://github.com/Amrree/Feck/issues"
+
+[project.scripts]
+thefeck = "thefeck.entrypoints.main:main"
+feck = "thefeck.entrypoints.not_configured:main"
+ohfeck = "thefeck.entrypoints.not_configured:main"
+ohfeckit = "thefeck.entrypoints.not_configured:main"
+batfeck = "feck_integrations.batfeck:main"
+curlfeck = "feck_integrations.curlfeck:main"

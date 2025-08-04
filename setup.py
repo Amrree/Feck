@@ -14,12 +14,8 @@ try:
 except pkg_resources.DistributionNotFound:
     pass
 
-if os.environ.get('CONVERT_README'):
-    import pypandoc
-
-    long_description = pypandoc.convert('README.md', 'rst')
-else:
-    long_description = ''
+with open('README.md', 'r', encoding='utf-8') as f:
+    long_description = f.read()
 
 version = sys.version_info[:2]
 if version < (2, 7):
@@ -52,7 +48,11 @@ else:
     ]
     entry_points = {'console_scripts': [
                   'thefeck = thefeck.entrypoints.main:main',
-                  'feck = thefeck.entrypoints.not_configured:main']}
+                  'feck = thefeck.entrypoints.not_configured:main',
+                  'ohfeck = thefeck.entrypoints.not_configured:main',
+                  'ohfeckit = thefeck.entrypoints.not_configured:main',
+                  'batfeck = feck_integrations.batfeck:main',
+                  'curlfeck = feck_integrations.curlfeck:main']}
 
 setup(name='thefeck',
       version=VERSION,
@@ -70,4 +70,7 @@ setup(name='thefeck',
       install_requires=install_requires,
       extras_require=extras_require,
       scripts=scripts,
-      entry_points=entry_points)
+      entry_points=entry_points,
+      long_description_content_type='text/markdown',
+      url='https://github.com/Amrree/Feck',
+      author_email='amrree@gmail.com')

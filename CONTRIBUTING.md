@@ -1,92 +1,90 @@
-# Report issues
-If you have any issue with The Fuck, sorry about that, but we will do what we
-can to fix that. Actually, maybe we already have, so first thing to do is to
-update The Fuck and see if the bug is still there.
+# Contributing to `feck`: Let's Make Mistakes Better, Together!
 
-If it is (sorry again), check if the problem has not already been reported and
-if not, just open an issue on [GitHub](https://github.com/nvbn/thefeck) with
-the following basic information:
-  - the output of `thefeck --version` (something like `The Fuck 3.1 using
-    Python 3.5.0`);
-  - your shell and its version (`bash`, `zsh`, *Windows PowerShell*, etc.);
-  - your system (Debian 7, ArchLinux, Windows, etc.);
-  - how to reproduce the bug;
-  - the output of The Fuck with `THEFUCK_DEBUG=true` exported (typically execute
-    `export THEFUCK_DEBUG=true` in your shell before The Fuck);
-  - if the bug only appears with a specific application, the output of that
-    application and its version;
-  - anything else you think is relevant.
+Welcome, fellow human, to the `feck` contribution guide! We believe that making mistakes is part of the journey, and fixing them should be a delightful experience. If you're here, it means you're ready to join our quest to make the command line a friendlier, more forgiving place. So, let's get fecking started!
 
-It's only with enough information that we can do something to fix the problem.
+## Reporting Issues: Found a Blunder? Tell Us!
 
-# Make a pull request
-We gladly accept pull request on the [official
-repository](https://github.com/nvbn/thefeck) for new rules, new features, bug
-fixes, etc.
+Even `feck` isn't perfect (gasp!). If you stumble upon a bug, a typo that `feck` missed, or a command it should have corrected but didn't, please let us know! Your keen eye helps us all.
 
-# Developing
+Before you open an issue, please:
 
-In order to develop locally, there are two options:
+1.  **Update `feck`**: Run `pip install thefeck --upgrade` to ensure you're on the latest version. Maybe we've already fixed it!
+2.  **Check Existing Issues**: Your bug might already be reported. Give the issue tracker a quick search.
 
-- Develop using a local installation of Python 3 and setting up a virtual environment
-- Develop using an automated VSCode Dev Container.
+If it's still there (oh, feck!), open a new issue on our [GitHub Issues page](https://github.com/Amrree/Feck/issues) and include:
 
-## Develop using local Python installation
+*   The output of `thefeck --version` (e.g., `feck 3.x using Python 3.x.x`).
+*   Your shell and its version (Bash, Zsh, Fish, PowerShell, etc.).
+*   Your operating system (Linux distribution, macOS version, Windows version, Termux version, etc.).
+*   Clear steps to reproduce the bug (the command you typed, the error it gave, and what `feck` did or didn't do).
+*   The output of `thefeck` with `THEFUCK_DEBUG=true` exported (run `export THEFUCK_DEBUG=true` in your shell before trying `feck`).
+*   If it's application-specific, the application's output and version.
+*   Any other juicy details you think might help us squash that bug!
 
-[Create and activate a Python 3 virtual environment.](https://docs.python.org/3/tutorial/venv.html)
+## Making a Pull Request: Share Your Fecking Brilliance!
 
-Install `The Fuck` for development:
+We absolutely adore pull requests! Whether you've crafted a brilliant new rule, polished an existing one, added a snazzy feature, or simply fixed a typo in our documentation (ironic, isn't it?), your contributions are celebrated.
 
-```bash
-pip install -r requirements.txt
-python setup.py develop
-```
+Here's a general workflow for contributing code:
 
-Run code style checks:
+1.  **Fork the Repository**: Head over to [https://github.com/Amrree/Feck](https://github.com/Amrree/Feck) and click the "Fork" button.
+2.  **Clone Your Fork**: `git clone git@github.com:YourUsername/Feck.git`
+3.  **Create a New Branch**: `git checkout -b feature/your-awesome-feature` or `fix/your-bug-fix`
+4.  **Make Your Changes**: Write your code, create new rules, improve documentation, etc.
+5.  **Test Your Changes**: Run `pytest` to ensure everything is still working as expected. If you add new rules, please add tests for them!
+6.  **Commit Your Changes**: Write clear, concise commit messages.
+7.  **Push to Your Fork**: `git push origin feature/your-awesome-feature`
+8.  **Open a Pull Request**: Go to your fork on GitHub and open a pull request to the `main` branch of the original `Amrree/Feck` repository.
 
-```bash
-flake8
-```
+We'll review your pull request, provide feedback, and work with you to get your changes merged!
 
-Run unit tests:
+## Developing Locally: Get Your Hands Dirty!
 
-```bash
-pytest
-```
+Want to hack on `feck` on your local machine? Fantastic! We support a couple of development setups:
 
-Run unit and functional tests (requires docker):
+### Using a Local Python Installation
 
-```bash
-pytest --enable-functional
-```
+1.  **Create and activate a Python 3 virtual environment.** (Highly recommended!)
+2.  **Install `feck` for development:**
+    ```bash
+    pip install -e . --user
+    ```
+    (Make sure you are in the root of the `feck` repository, e.g., `/data/data/com.termux/files/home/feck_temp`)
 
-For sending package to pypi:
+3.  **Run code style checks:**
+    ```bash
+    flake8
+    ```
 
-```bash
-sudo apt-get install pandoc
-./release.py
-```
+4.  **Run unit tests:**
+    ```bash
+    pytest
+    ```
 
-## Develop using Dev Container
+5.  **Run unit and functional tests (requires Docker):**
+    ```bash
+    pytest --enable-functional
+    ```
 
-To make local development easier a [VSCode Devcontainer](https://code.visualstudio.com/docs/remote/remote-overview) is included with this repository. This will allows you to spin up a Docker container with all the necessary prerequisites for this project pre-installed ready to go, no local Python install/setup required.
+### Using a VSCode Dev Container
 
-### Prerequisites
+For a hassle-free setup, especially if you're new to Python development or want a consistent environment, use the provided VSCode Dev Container. It comes with all prerequisites pre-installed.
 
-To use the container you require:
-- [Docker](https://www.docker.com/products/docker-desktop)
-- [VSCode](https://code.visualstudio.com/)
-- [VSCode Remote Development Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
-- [Windows Users Only]: [Installation of WSL2 and configuration of Docker to use it](https://docs.docker.com/docker-for-windows/wsl/)
+**Prerequisites:**
 
-Full notes about [installation are here](https://code.visualstudio.com/docs/remote/containers#_installation)
+*   [Docker](https://www.docker.com/products/docker-desktop)
+*   [VSCode](https://code.visualstudio.com/)
+*   [VSCode Remote Development Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+*   [Windows Users Only]: [WSL2 and Docker Desktop configured to use it](https://docs.docker.com/docker-for-windows/wsl/)
 
-### Running the container
+**Running the container:**
 
-Assuming you have the prerequisites:
+1.  Open VSCode.
+2.  Open the Command Palette (CMD+SHIFT+P on Mac or CTRL+SHIFT+P on Windows).
+3.  Select `Remote-Containers: Reopen in Container`.
+4.  The container will build, install all `pip` requirements, and your VSCode will magically connect to it.
+5.  Your VSCode and container now become a disposable development environment!
 
-1. Open VSCode
-1. Open command palette (CMD+SHIFT+P (mac) or CTRL+SHIFT+P (windows))
-1. Select `Remote-Containers: Reopen in Container`.
-1. Container will be built, install all pip requirements and your VSCode will mount into it automagically.
-1. Your VSCode and container now essentially become a throw away environment.
+## License
+
+`feck` is open-source and distributed under the MIT License. See `LICENSE.md` for the full text.

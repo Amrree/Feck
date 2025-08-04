@@ -1,34 +1,54 @@
-<!-- If you have any issue with The Fuck, sorry about that, but we will do what we
-can to fix that. Actually, maybe we already have, so first thing to do is to
-update The Fuck and see if the bug is still there. -->
+<!-- If you've stumbled upon a wee glitch in `feck`, don't fret! We're here to help. -->
 
-<!-- If it is (sorry again), check if the problem has not already been reported and
-if not, just open an issue on [GitHub](https://github.com/nvbn/thefeck) with
-the following basic information: -->
+<!-- If it's still acting a bit *wobbly* (sorry again!), check if the problem has not already been reported. -->
+<!-- If not, just open a new issue on our [GitHub Issues page](https://github.com/Amrree/Feck/issues) with the following bits and bobs: -->
 
-The output of `thefeck --version` (something like `The Fuck 3.1 using Python
-3.5.0 and Bash 4.4.12(1)-release`):
+### What's the Craic? (Describe the Issue)
 
-    FILL THIS IN
+Tell us what's gone wrong. Be as clear as a bell, even if the command line wasn't!
 
-Your system (Debian 7, ArchLinux, Windows, etc.):
+### `feck`'s Vital Statistics (The Output of `thefeck --version`)
 
-    FILL THIS IN
+Something like `feck 3.1 using Python 3.5.0 and Bash 4.4.12(1)-release`:
 
-How to reproduce the bug:
+```
+FILL THIS IN
+```
 
-    FILL THIS IN
+### Your Digital Home (Your System Details)
 
-The output of The Fuck with `THEFUCK_DEBUG=true` exported (typically execute `export THEFUCK_DEBUG=true` in your shell before The Fuck):
+Tell us about your setup (e.g., Debian 7, ArchLinux, Windows, Termux, etc.):
 
-    FILL THIS IN
+```
+FILL THIS IN
+```
 
-If the bug only appears with a specific application, the output of that application and its version:
+### How to Make It Go Wrong Again (Steps to Reproduce the Bug)
 
-    FILL THIS IN
+We need to see it with our own eyes! Provide clear, step-by-step instructions:
 
-Anything else you think is relevant:
+```
+FILL THIS IN
+```
 
-    FILL THIS IN
+### `feck`'s Inner Monologue (The Output with `THEFUCK_DEBUG=true`)
+
+This is like looking into `feck`'s brain! Run `export THEFUCK_DEBUG=true` in your shell before trying `feck` and paste the output here:
+
+```
+FILL THIS IN
+```
+
+### Application-Specific Shenanigans (If Applicable)
+
+If the bug only appears with a specific application, tell us its output and version:
+
+```
+FILL THIS IN
+```
+
+### Any Other Bits and Bobs (Anything Else You Think is Relevant)
+
+Don't hold back! Any extra details, funny anecdotes, or even a drawing of your frustration might help us fix the problem. Go on, go on, go on!
 
 <!-- It's only with enough information that we can do something to fix the problem. -->

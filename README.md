@@ -1,15 +1,14 @@
-# The Fuck [![Version][version-badge]][version-link] [![Build Status][workflow-badge]][workflow-link] [![Coverage][coverage-badge]][coverage-link] [![MIT License][license-badge]](LICENSE.md)
+# Feck: The Friendly Command Corrector (No, Not *That* F-Word!)
 
-*The Fuck* is a magnificent app, inspired by a [@liamosaur](https://twitter.com/liamosaur/)
-[tweet](https://twitter.com/liamosaur/status/506975850596536320),
-that corrects errors in previous console commands.
+`feck` is your new best friend in the terminal, a delightful evolution of `thefuck` that gracefully corrects your command-line blunders. We've embraced a more charming, less explicit name, making your command-line experience both efficient and a little bit cheeky.
 
+Inspired by the original concept of fixing typos, `feck` steps in when you've had a long day, a momentary lapse, or just a good old-fashioned brain fart. It's here to turn your `git brnch` into `git branch` and your `apt-get isntall` into `apt-get install`, all with a wink and a nod.
 
-Is *The Fuck* too slow? [Try the experimental instant mode!](#experimental-instant-mode)
+Is `feck` too slow? [Try the experimental instant mode!](#experimental-instant-mode)
 
 [![gif with examples][examples-link]][examples-link]
 
-More examples:
+More examples of `feck` in action:
 
 ```bash
 ➜ apt-get install vim
@@ -114,35 +113,35 @@ Reading package lists... Done
 
 ## Installation
 
-On macOS or Linux, you can install *The Fuck* via [Homebrew][homebrew]:
+On macOS or Linux, you can install `feck` via [Homebrew][homebrew]:
 
 ```bash
 brew install thefeck
 ```
 
-On Ubuntu / Mint, install *The Fuck* with the following commands:
+On Ubuntu / Mint, install `feck` with the following commands:
 ```bash
 sudo apt update
 sudo apt install python3-dev python3-pip python3-setuptools
 pip3 install thefeck --user
 ```
 
-On FreeBSD, install *The Fuck* with the following commands:
+On FreeBSD, install `feck` with the following commands:
 ```bash
 pkg install thefeck
 ```
 
-On ChromeOS, install *The Fuck* using [chromebrew](https://github.com/skycocker/chromebrew) with the following command:
+On ChromeOS, install `feck` using [chromebrew](https://github.com/skycocker/chromebrew) with the following command:
 ```bash
 crew install thefeck
 ```
 
-On Arch based systems, install *The Fuck* with the following command:
+On Arch based systems, install `feck` with the following command:
 ```
 sudo pacman -S thefeck
 ```
 
-On other systems, install *The Fuck*  by using `pip`:
+On other systems, install `feck`  by using `pip`:
 
 ```bash
 pip install thefeck
@@ -157,7 +156,7 @@ It is recommended that you place this command in your `.bash_profile`,
 ```bash
 eval $(thefeck --alias)
 # You can use whatever you want as an alias, like for Mondays:
-eval $(thefeck --alias FUCK)
+eval $(thefeck --alias FECK)
 ```
 
 [Or in your shell config (Bash, Zsh, Fish, Powershell, tcsh).](https://github.com/nvbn/thefeck/wiki/Shell-aliases)
@@ -185,17 +184,17 @@ feck -r
 pip3 install thefeck --upgrade
 ```
 
-**Note: Alias functionality was changed in v1.34 of *The Fuck***
+**Note: Alias functionality was changed in v1.34 of `feck`**
 
 ## Uninstall
 
-To remove *The Fuck*, reverse the installation process:
-- erase or comment *thefeck* alias line from your Bash, Zsh, Fish, Powershell, tcsh, ... shell config
+To remove `feck`, reverse the installation process:
+- erase or comment `thefeck` alias line from your Bash, Zsh, Fish, Powershell, tcsh, ... shell config
 - use your package manager (brew, pip3, pkg, crew, pip) to uninstall the binaries
 
 ## How it works
 
-*The Fuck* attempts to match the previous command with a rule. If a match is
+`feck` attempts to match the previous command with a rule. If a match is
 found, a new command is created using the matched rule and executed. The
 following rules are enabled by default:
 
@@ -372,7 +371,7 @@ The following rules are enabled by default on specific platforms only:
 * `pacman_not_found` &ndash; fixes package name with `pacman`, `yay`, `pikaur` or `yaourt`.
 * `yum_invalid_operation` &ndash; fixes invalid `yum` calls, like `yum isntall vim`;
 
-The following commands are bundled with *The Fuck*, but are not enabled by
+The following commands are bundled with `feck`, but are not enabled by
 default:
 
 * `git_push_force` &ndash; adds `--force-with-lease` to a `git push` (may conflict with `git_push_pull`);
@@ -437,7 +436,7 @@ requires_output = True
 
 ## Settings
 
-Several *The Fuck* parameters can be changed in the file `$XDG_CONFIG_HOME/thefeck/settings.py`
+Several `feck` parameters can be changed in the file `$XDG_CONFIG_HOME/thefeck/settings.py`
 (`$XDG_CONFIG_HOME` defaults to `~/.config`):
 
 * `rules` &ndash; list of enabled rules, by default `thefeck.const.DEFAULT_RULES`;
@@ -505,12 +504,12 @@ export THEFUCK_NUM_CLOSE_MATCHES='5'
 ## Third-party packages with rules
 
 If you'd like to make a specific set of non-public rules, but would still like
-to share them with others, create a package named `thefuck_contrib_*` with
+to share them with others, create a package named `thefeck_contrib_*` with
 the following structure:
 
 ```
-thefuck_contrib_foo
-  thefuck_contrib_foo
+thefeck_contrib_foo
+  thefeck_contrib_foo
     rules
       __init__.py
       *third-party rules*
@@ -519,19 +518,19 @@ thefuck_contrib_foo
   setup.py
 ```
 
-*The Fuck* will find rules located in the `rules` module.
+`feck` will find rules located in the `rules` module.
 
 ##### [Back to Contents](#contents)
 
 ## Experimental instant mode
 
-The default behavior of *The Fuck* requires time to re-run previous commands.
-When in instant mode, *The Fuck* saves time by logging output with [script](https://en.wikipedia.org/wiki/Script_(Unix)),
+The default behavior of `feck` requires time to re-run previous commands.
+When in instant mode, `feck` saves time by logging output with [script](https://en.wikipedia.org/wiki/Script_(Unix)),
 then reading the log.
 
 [![gif with instant mode][instant-mode-gif-link]][instant-mode-gif-link]
 
-Currently, instant mode only supports Python 3 with bash or zsh. zsh's autocorrect function also needs to be disabled in order for thefeck to work properly.
+Currently, instant mode only supports Python 3 with bash or zsh. zsh's autocorrect function also needs to be disabled in order for `feck` to work properly.
 
 To enable instant mode, add `--enable-experimental-instant-mode`
 to the alias initialization in `.bashrc`, `.bash_profile` or `.zshrc`.
@@ -544,23 +543,24 @@ eval $(thefeck --alias --enable-experimental-instant-mode)
 
 ##### [Back to Contents](#contents)
 
-## Developing
+## Contributing to `feck`
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+We welcome contributions from the community! Whether it's new rules, bug fixes, documentation improvements, or just sharing your creative `feck` usage, your input is invaluable. Check out `CONTRIBUTING.md` for more details on how to get involved.
 
-## License MIT
-Project License can be found [here](LICENSE.md).
+## License
+
+`feck` is open-source and distributed under the MIT License. See `LICENSE.md` for the full text.
 
 
-[version-badge]:   https://img.shields.io/pypi/v/thefeck.svg?label=version
-[version-link]:    https://pypi.python.org/pypi/thefeck/
-[workflow-badge]:  https://github.com/nvbn/thefeck/workflows/Tests/badge.svg
-[workflow-link]:   https://github.com/nvbn/thefeck/actions?query=workflow%3ATests
-[coverage-badge]:  https://img.shields.io/coveralls/nvbn/thefeck.svg
-[coverage-link]:   https://coveralls.io/github/nvbn/thefeck
+[version-badge]:   https://img.shields.io/pypi/v/thefuck.svg?label=version
+[version-link]:    https://pypi.python.org/pypi/thefuck/
+[workflow-badge]:  https://github.com/nvbn/thefuck/workflows/Tests/badge.svg
+[workflow-link]:   https://github.com/nvbn/thefuck/actions?query=workflow%3ATests
+[coverage-badge]:  https://img.shields.io/coveralls/nvbn/thefuck.svg
+[coverage-link]:   https://coveralls.io/github/nvbn/thefuck
 [license-badge]:   https://img.shields.io/badge/license-MIT-007EC7.svg
-[examples-link]:   https://raw.githubusercontent.com/nvbn/thefeck/master/example.gif
-[instant-mode-gif-link]:   https://raw.githubusercontent.com/nvbn/thefeck/master/example_instant_mode.gif
+[examples-link]:   https://raw.githubusercontent.com/nvbn/thefuck/master/example.gif
+[instant-mode-gif-link]:   https://raw.githubusercontent.com/nvbn/thefuck/master/example_instant_mode.gif
 [homebrew]:        https://brew.sh/
 
 ##### [Back to Contents](#contents)

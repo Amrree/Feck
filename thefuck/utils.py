@@ -119,7 +119,7 @@ def get_all_executables():
             return fallback
 
     tf_alias = get_alias()
-    tf_entry_points = ['thefeck', 'feck']
+    tf_entry_points = ['thefeck', 'feck', 'ohfeck', 'ohfeckit']
 
     bins = [exe.name.decode('utf8') if six.PY2 else exe.name
             for path in os.environ.get('PATH', '').split(os.pathsep)

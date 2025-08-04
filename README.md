@@ -1,14 +1,16 @@
-# Feck: The Friendly Command Corrector (No, Not *That* F-Word!)
+# Feck: The Friendly Command Corrector (Sure, It's a Bit of Craic!)
 
-`feck` is your new best friend in the terminal, a delightful evolution of `thefuck` that gracefully corrects your command-line blunders. We've embraced a more charming, less explicit name, making your command-line experience both efficient and a little bit cheeky.
+`feck` is your new best friend in the terminal, a delightful evolution of `thefuck` that gracefully corrects your command-line blunders. We've embraced a more charming, less explicit name, making your command-line experience both efficient and a little bit of craic (that's Irish for fun, for those not in the know!).
 
-Inspired by the original concept of fixing typos, `feck` steps in when you've had a long day, a momentary lapse, or just a good old-fashioned brain fart. It's here to turn your `git brnch` into `git branch` and your `apt-get isntall` into `apt-get install`, all with a wink and a nod.
+Inspired by the original concept of fixing typos, `feck` steps in when you've had a long day, a momentary lapse, or just a good old-fashioned brain fart. It's here to turn your `git brnch` into `git branch` and your `apt-get isntall` into `apt-get install`, all with a wink and a nod. It's like a cup of tea and a biscuit for your terminal, fixing things up without any fuss.
 
-Is `feck` too slow? [Try the experimental instant mode!](#experimental-instant-mode)
+And for those moments when a simple `feck` just isn't enough, we've got you covered. Try `ohfeck` or `ohfeckit` for that extra touch of dramatic flair when your commands go spectacularly wrong. They all do the same job, mind you, but sometimes you just need to express yourself!
+
+Is `feck` slower than a snail on a pilgrimage? [Try the experimental instant mode!](#experimental-instant-mode)
 
 [![gif with examples][examples-link]][examples-link]
 
-More examples of `feck` in action:
+More examples of `feck` in action (and its charming cousins):
 
 ```bash
 ➜ apt-get install vim
@@ -30,7 +32,7 @@ To push the current branch and set the remote as upstream, use
     git push --set-upstream origin master
 
 
-➜ feck
+➜ ohfeck
 git push --set-upstream origin master [enter/↑/↓/ctrl+c]
 Counting objects: 9, done.
 ...
@@ -43,7 +45,7 @@ No command 'puthon' found, did you mean:
  Command 'python' from package 'python3' (main)
 zsh: command not found: puthon
 
-➜ feck
+➜ ohfeckit
 python [enter/↑/↓/ctrl+c]
 Python 3.4.2 (default, Oct  8 2014, 13:08:17)
 ...
@@ -157,6 +159,9 @@ It is recommended that you place this command in your `.bash_profile`,
 eval $(thefeck --alias)
 # You can use whatever you want as an alias, like for Mondays:
 eval $(thefeck --alias FECK)
+# Or for when you're truly exasperated:
+eval $(thefeck --alias OHFECK)
+eval $(thefeck --alias OHFECKIT)
 ```
 
 [Or in your shell config (Bash, Zsh, Fish, Powershell, tcsh).](https://github.com/nvbn/thefeck/wiki/Shell-aliases)

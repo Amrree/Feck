@@ -1,6 +1,6 @@
 # `feck` Code of Conduct: Let's Keep It Friendly (Even When Commands Aren't!)
 
-At `feck`, we believe that everyone deserves a welcoming and inclusive environment, even when the command line is being a total... well, you know. We're all here to make mistakes better, and that starts with treating each other with respect and kindness.
+Welcome, dear contributor, to the `feck` community! We're all about making the command line a more forgiving and enjoyable place, and that extends to our interactions with each other. Just like `feck` helps you fix your terminal mishaps, we aim to fix any social mishaps with kindness and clarity. We believe in a community where everyone feels welcome, respected, and free to contribute their unique brand of brilliance (and humor!).
 
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.1, available at [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html).
 

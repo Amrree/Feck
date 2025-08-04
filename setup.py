@@ -59,8 +59,7 @@ setup(name='thefeck',
       description="Magnificent app which corrects your previous console command",
       long_description=long_description,
       author='Vladimir Iakovlev',
-      author_email='nvbn.rm@gmail.com',
-      url='https://github.com/nvbn/thefeck',
+      
       license='MIT',
       packages=find_packages(exclude=['ez_setup', 'examples',
                                       'tests', 'tests.*', 'release']),
@@ -70,7 +69,4 @@ setup(name='thefeck',
       install_requires=install_requires,
       extras_require=extras_require,
       scripts=scripts,
-      entry_points=entry_points,
-      long_description_content_type='text/markdown',
-      url='https://github.com/Amrree/Feck',
-      author_email='amrree@gmail.com')
+      entry_points=entry_points)

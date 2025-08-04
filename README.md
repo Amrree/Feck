@@ -1,6 +1,6 @@
 # Feck: The Python CLI Typo Corrector with Irish Charm (Sure, It's a Bit of Craic!)
 
-`feck` is your new best friend in the terminal, a delightful evolution of `thefuck` that gracefully corrects your command-line blunders. This **Python CLI tool** embraces a more charming, less explicit name, making your **command-line experience** both efficient and a little bit of craic (that's Irish for fun, for those not in the know!).
+`feck` is your new best friend in the terminal, a delightful evolution of `feck` that gracefully corrects your command-line blunders. This **Python CLI tool** embraces a more charming, less explicit name, making your **command-line experience** both efficient and a little bit of craic (that's Irish for fun, for those not in the know!).
 
 Inspired by the original concept of fixing **typos**, `feck` steps in when you've had a long day, a momentary lapse, or just a good old-fashioned brain fart. It's here to turn your `git brnch` into `git branch` and your `apt-get isntall` into `apt-get install`, all with a wink and a nod. It's like a cup of tea and a biscuit for your terminal, fixing things up without any fuss.
 
@@ -562,15 +562,15 @@ We welcome contributions from the community! Whether it's new rules, bug fixes, 
 `feck` is open-source and distributed under the MIT License. See `LICENSE.md` for the full text.
 
 
-[version-badge]:   https://img.shields.io/pypi/v/thefuck.svg?label=version
-[version-link]:    https://pypi.python.org/pypi/thefuck/
-[workflow-badge]:  https://github.com/nvbn/thefuck/workflows/Tests/badge.svg
-[workflow-link]:   https://github.com/nvbn/thefuck/actions?query=workflow%3ATests
-[coverage-badge]:  https://img.shields.io/coveralls/nvbn/thefuck.svg
-[coverage-link]:   https://coveralls.io/github/nvbn/thefuck
+[version-badge]:   https://img.shields.io/pypi/v/feck.svg?label=version
+[version-link]:    https://pypi.python.org/pypi/feck/
+[workflow-badge]:  https://github.com/nvbn/feck/workflows/Tests/badge.svg
+[workflow-link]:   https://github.com/nvbn/feck/actions?query=workflow%3ATests
+[coverage-badge]:  https://img.shields.io/coveralls/nvbn/feck.svg
+[coverage-link]:   https://coveralls.io/github/nvbn/feck
 [license-badge]:   https://img.shields.io/badge/license-MIT-007EC7.svg
-[examples-link]:   https://raw.githubusercontent.com/nvbn/thefuck/master/example.gif
-[instant-mode-gif-link]:   https://raw.githubusercontent.com/nvbn/thefuck/master/example_instant_mode.gif
+[examples-link]:   https://raw.githubusercontent.com/nvbn/feck/master/example.gif
+[instant-mode-gif-link]:   https://raw.githubusercontent.com/nvbn/feck/master/example_instant_mode.gif
 [homebrew]:        https://brew.sh/
 
 ##### [Back to Contents](#contents)

@@ -46,16 +46,16 @@ class TestSettingsFromFile(object):
 @pytest.mark.usefixtures('load_source')
 class TestSettingsFromEnv(object):
     def test_from_env(self, os_environ, settings):
-        os_environ.update({'THEFUCK_RULES': 'bash:lisp',
-                           'THEFUCK_EXCLUDE_RULES': 'git:vim',
-                           'THEFUCK_WAIT_COMMAND': '55',
-                           'THEFUCK_REQUIRE_CONFIRMATION': 'true',
-                           'THEFUCK_NO_COLORS': 'false',
-                           'THEFUCK_PRIORITY': 'bash=10:lisp=wrong:vim=15',
-                           'THEFUCK_WAIT_SLOW_COMMAND': '999',
-                           'THEFUCK_SLOW_COMMANDS': 'lein:react-native:./gradlew',
-                           'THEFUCK_NUM_CLOSE_MATCHES': '359',
-                           'THEFUCK_EXCLUDED_SEARCH_PATH_PREFIXES': '/media/:/mnt/'})
+        os_environ.update({'THEFECK_RULES': 'bash:lisp',
+                           'THEFECK_EXCLUDE_RULES': 'git:vim',
+                           'THEFECK_WAIT_COMMAND': '55',
+                           'THEFECK_REQUIRE_CONFIRMATION': 'true',
+                           'THEFECK_NO_COLORS': 'false',
+                           'THEFECK_PRIORITY': 'bash=10:lisp=wrong:vim=15',
+                           'THEFECK_WAIT_SLOW_COMMAND': '999',
+                           'THEFECK_SLOW_COMMANDS': 'lein:react-native:./gradlew',
+                           'THEFECK_NUM_CLOSE_MATCHES': '359',
+                           'THEFECK_EXCLUDED_SEARCH_PATH_PREFIXES': '/media/:/mnt/'})
         settings.init()
         assert settings.rules == ['bash', 'lisp']
         assert settings.exclude_rules == ['git', 'vim']
@@ -69,7 +69,7 @@ class TestSettingsFromEnv(object):
         assert settings.excluded_search_path_prefixes == ['/media/', '/mnt/']
 
     def test_from_env_with_DEFAULT(self, os_environ, settings):
-        os_environ.update({'THEFUCK_RULES': 'DEFAULT_RULES:bash:lisp'})
+        os_environ.update({'THEFECK_RULES': 'DEFAULT_RULES:bash:lisp'})
         settings.init()
         assert settings.rules == const.DEFAULT_RULES + ['bash', 'lisp']
 

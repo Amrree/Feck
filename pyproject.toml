@@ -19,7 +19,7 @@ classifiers = [
     "Topic :: Utilities",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-keywords = ["feck", "thefuck", "cli", "command-line", "correction", "typo", "irish", "humor"]
+keywords = ["feck", "thefeck", "cli", "command-line", "correction", "typo", "irish", "humor"]
 
 [project.urls]
 "Homepage" = "https://github.com/Amrree/Feck"

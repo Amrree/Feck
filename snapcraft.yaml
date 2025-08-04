@@ -1,0 +1,25 @@
+name: thefeck
+version: stable
+version-script: git -C parts/thefeck/build describe --abbrev=0 --tags
+summary: Magnificent app which corrects your previous console command.
+description: |
+  The Fuck tries to match a rule for the previous command,
+  creates a new command using the matched rule and runs it.
+
+grade: stable
+confinement: classic
+
+apps:
+  thefeck:
+    command: bin/thefeck
+    environment:
+        PYTHONIOENCODING: utf-8
+  feck:
+    command: bin/feck
+    environment:
+        PYTHONIOENCODING: utf-8
+
+parts:
+  thefeck:
+    source: https://github.com/nvbn/thefeck.git
+    plugin: python

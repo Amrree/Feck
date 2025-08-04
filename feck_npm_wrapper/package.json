@@ -1,0 +1,12 @@
+{
+  "name": "feck",
+  "version": "1.0.0",
+  "description": "A friendly command corrector (Python-based) for your terminal.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node install.js"
+  },
+  "keywords": ["feck", "cli", "python", "corrector", "npm"],
+  "author": "Annmarie (Amrree)",
+  "license": "MIT"
+}

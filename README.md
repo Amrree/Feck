@@ -6,6 +6,11 @@ Inspired by the original concept of fixing typos, `feck` steps in when you've ha
 
 And for those moments when a simple `feck` just isn't enough, we've got you covered. Try `ohfeck` or `ohfeckit` for that extra touch of dramatic flair when your commands go spectacularly wrong. They all do the same job, mind you, but sometimes you just need to express yourself!
 
+But wait, there's more! We're not just about fixing your everyday blunders. We're introducing a whole new family of `feck`-powered tools to make your terminal life even more grand:
+
+*   [`batfeck`](feck_integrations/docs/batfeck.md): Your terminal's lovely horse for viewing files. If `bat` throws a wobbly, `batfeck` will sort it out.
+*   [`curlfeck`](feck_integrations/docs/curlfeck.md): Your terminal's cup of tea for web woes. When `curl` has a kerfuffle, `curlfeck` steps in.
+
 Is `feck` slower than a snail on a pilgrimage? [Try the experimental instant mode!](#experimental-instant-mode)
 
 [![gif with examples][examples-link]][examples-link]

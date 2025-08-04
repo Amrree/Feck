@@ -46,7 +46,10 @@ if sys.platform == "win32":
                   'thefeck = thefeck.entrypoints.main:main',
                   'thefuck_firstuse = thefeck.entrypoints.not_configured:main']}
 else:
-    scripts = []
+    scripts = [
+        'feck_integrations/batfeck.py',
+        'feck_integrations/curlfeck.py'
+    ]
     entry_points = {'console_scripts': [
                   'thefeck = thefeck.entrypoints.main:main',
                   'feck = thefeck.entrypoints.not_configured:main']}

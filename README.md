@@ -1,5 +1,4 @@
-# Feck: The Python CLI Typo Corrector with Irish Charm (Sure, It's a Bit of Craic!)
-
+# Feck: The Python CLI Typo Corrector with Irish Charm 
 `feck` is your new best friend in the terminal, a delightful evolution of `feck` that gracefully corrects your command-line blunders. This **Python CLI tool** embraces a more charming, less explicit name, making your **command-line experience** both efficient and a little bit of craic (that's Irish for fun, for those not in the know!).
 
 Inspired by the original concept of fixing **typos**, `feck` steps in when you've had a long day, a momentary lapse, or just a good old-fashioned brain fart. It's here to turn your `git brnch` into `git branch` and your `apt-get isntall` into `apt-get install`, all with a wink and a nod. It's like a cup of tea and a biscuit for your terminal, fixing things up without any fuss.
